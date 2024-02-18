@@ -49,9 +49,17 @@
 
 .input img {
     margin: 0px 30px;
+    opacity: 0.5;
+    transition: 1s linear;
+    cursor: pointer;
+}
+
+.input img:hover {
+    opacity: 1;
 }
 
 .input input {
+    font-family: "Raleway", sans-serif, serif;
     height: 50px;
     width: 400px;
     background: transparent;
@@ -66,12 +74,19 @@
     margin-top: 30px;
     color: #797979;
     font-size: 1.125rem;
+    font-weight: 500;
 }
 
 .forgot-password span {
     color: #121149;
     cursor: pointer;
+    transition: 1s linear;
 }
+
+.forgot-password span:hover {
+    color: #121149a8;
+}
+
 
 .submit-container {
     display: flex;
@@ -91,9 +106,19 @@
     font-size: 1.25rem;
     font-weight: 700;
     cursor: pointer;
+    transition: 1s linear;
+}
+
+.submit:hover {
+    background-color: #273a7ac9;
 }
 
 .gray {
     background: #eaeaea;
     color: #676767;
+    transition: background 1s linear;
+}
+
+.gray:hover {
+    background: #cecece;
 }

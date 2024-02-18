@@ -3,3 +3,8 @@ body {
     background: linear-gradient(#273B7A, #121149);
     font-family: "Raleway", sans-serif, serif;
 }
+
+body::-webkit-scrollbar {
+    display: none;
+}
+  

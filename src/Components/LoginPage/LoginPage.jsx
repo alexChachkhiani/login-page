@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import { React,  useState } from 'react'
 import './LoginPage.css'
 import userIcon from '../Assets/person.png'
 import emailIcon from '../Assets/email.png'
@@ -23,7 +23,7 @@ export default function LoginPage() {
             }
             <div className="input">
                 <img src={emailIcon} alt="Email Icon" />
-                <input type="email" placeholder="Email Address" />
+                <input type="email" placeholder="Email Address"/>
             </div>
             <div className="input">
                 <img src={passwordIcon} alt="Password Icon" />
@@ -31,7 +31,7 @@ export default function LoginPage() {
             </div>
         </div>
         {action === "Login" ? 
-            <div className="forgot-password">Lost Password? <span>Click Here!</span></div> : ""
+            <div className="forgot-password">Forgot Password? <span>Click Here!</span></div> : ""
         }
         <div className="submit-container">
             <div className={action === "Login" ? "submit gray" : "submit"} onClick={() => {setAction("Sign Up")}}>Sign Up</div>
