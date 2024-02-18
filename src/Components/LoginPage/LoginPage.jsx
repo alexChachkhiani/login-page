@@ -5,6 +5,9 @@ import emailIcon from '../Assets/email.png'
 import passwordIcon from '../Assets/password.png'
 
 export default function LoginPage() {
+
+    const [action, setAction] = useState("Sign Up")
+
   return (
     <div className="container">
         <div className="header">
@@ -12,10 +15,12 @@ export default function LoginPage() {
             <div className="underline"></div>
         </div>
         <div className="inputs">
-            <div className="input">
+            {action === "Sign Up" ? 
+            <div><div className="input">
                 <img src={userIcon} alt="User Icon" />
                 <input type="text" placeholder="Name" />
-            </div>
+            </div></div> : ""
+            }
             <div className="input">
                 <img src={emailIcon} alt="Email Icon" />
                 <input type="email" placeholder="Email Address" />
@@ -24,11 +29,13 @@ export default function LoginPage() {
                 <img src={passwordIcon} alt="Password Icon" />
                 <input type="password" placeholder="Password" />
             </div>
-        <div className="forgot-password">Lost Password? <span>Click Here!</span></div>
         </div>
+        {action === "Login" ? 
+            <div className="forgot-password">Lost Password? <span>Click Here!</span></div> : ""
+        }
         <div className="submit-container">
-            <div className="submit">Sign Up</div>
-            <div className="submit">Login</div>
+            <div className={action === "Login" ? "submit gray" : "submit"} onClick={() => {setAction("Sign Up")}}>Sign Up</div>
+            <div className={action === "Sign Up" ? "submit gray" : "submit"} onClick={() => {setAction("Login")}}>Login</div>
         </div>
     </div>
   )
