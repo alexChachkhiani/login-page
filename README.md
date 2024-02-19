@@ -1,8 +1,7 @@
-# React + Vite
+# Login Page
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Login Page built in React 
 
-Currently, two official plugins are available:
+This is a simple page that allows you to type in your name, email and password. It has a separate login and sign up forms.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## View the website [here](https://alexchachkhiani.github.io/login-page)
